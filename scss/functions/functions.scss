@@ -3,7 +3,9 @@
 // ==========================================================================
 
 // Convert px to em in a readable fashion.
-// Example: font-size: em(14/16);
-@function em($value, $context) {
+// Examples:
+// 1. font-size: em(14); 
+// 2. font-size: em(30/14);
+@function em($value, $context: $base__font-size) {
 	@return ($value / $context * 1em);
 }

@@ -9,7 +9,7 @@ select,
 textarea {
 	color: $color__primary-text;
 	font-family: sans-serif;
-	font-size: 16px;
+	font-size: $base__font-size * 1px;
 	line-height: $line-height;
 }
 h1,
