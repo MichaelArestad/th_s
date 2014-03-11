@@ -66,7 +66,7 @@ module.exports = function(grunt) {
             //     },
             // },
             scss: {
-                files: ['scss/*.scss', 'scss/**/*.scss'],
+                files: ['scss/*.scss', 'scss/**/*.scss', 'scss/**/**/*.scss'],
                 tasks: ['sass', 'autoprefixer'],
                 options: {
                     livereload: true,
