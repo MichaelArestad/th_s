@@ -47,9 +47,10 @@ and Blueprint http://www.blueprintcss.org/
 --------------------------------------------------------------*/
 
 // Variables
-@import "variables/typography"; // Typography variables
-@import "variables/colors"; // Color variables
 @import "variables/variables"; // Other variables
+
+// Functions
+@import "functions/functions";
 
 // Mixins
 @import "mixins/mixins";

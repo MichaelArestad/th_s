@@ -287,7 +287,7 @@ address {
 }
 
 pre {
-  background: #eee;
+  background: #eeeeee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 1.5rem;
@@ -346,7 +346,7 @@ big {
 4.0 - Elements
 --------------------------------------------------------------*/
 hr {
-  background-color: #ccc;
+  background-color: #cccccc;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;

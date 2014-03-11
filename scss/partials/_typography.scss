@@ -7,11 +7,10 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: $color__primary-text;
 	font-family: sans-serif;
 	font-size: 16px;
-	// font-size: 1.6rem;
-	line-height: 1.5;
+	line-height: $line-height;
 }
 h1,
 h2,
@@ -26,7 +25,7 @@ p {
 }
 b,
 strong {
-	font-weight: bold;
+	font-weight: $bold;
 }
 dfn,
 cite,
@@ -41,7 +40,7 @@ address {
 	margin: 0 0 1.5em;
 }
 pre {
-	background: #eee;
+	background: $color__pre-background;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 1.5rem;
@@ -64,7 +63,7 @@ acronym {
 }
 mark,
 ins {
-	background: #fff9c0;
+	background: $color__mark-background;
 	text-decoration: none;
 }
 sup,

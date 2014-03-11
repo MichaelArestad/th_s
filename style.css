@@ -312,7 +312,7 @@ address {
 }
 
 pre {
-  background: #eee;
+  background: #eeeeee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 1.5rem;
@@ -371,7 +371,7 @@ big {
 3.0 - Elements
 --------------------------------------------------------------*/
 hr {
-  background-color: #ccc;
+  background-color: #cccccc;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -497,8 +497,8 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
+  color: #666666;
+  border: 1px solid #cccccc;
   border-radius: 3px;
 }
 input[type="text"]:focus,
@@ -507,7 +507,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  color: #111;
+  color: #111111;
 }
 
 input[type="text"],

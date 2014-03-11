@@ -61,12 +61,12 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
+	color: $color__input-text;
+	border: 1px solid $color__input-border;
 	border-radius: 3px;
 
 	&:focus {
-		color: #111;
+		color: $color__input-text--focus;
 	}
 }
 input[type="text"],
