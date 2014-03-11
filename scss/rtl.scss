@@ -8,6 +8,16 @@ of your CSS stylesheet in a separate stylesheet file named rtl.css.
 http://codex.wordpress.org/Right_to_Left_Language_Support
 
 */
+
+// Variables
+@import "variables/variables"; // Other variables
+
+// Functions
+@import "functions/functions";
+
+// Mixins
+@import "mixins/mixins";
+
 /*
 body {
 	direction: rtl;
