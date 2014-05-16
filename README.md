@@ -1,7 +1,7 @@
 th_s (THUNDERSCORES)
 ===
 
-Hi! I'm a set of Sass files called `th_s` or `THUNDERSCORES` meant to be used within the [_s](http://underscores.me/ "So good!") WordPress starter theme.
+Hi! I'm a set of Sass files called `th_s` or `THUNDERSCORES` meant to be used within the [_s](http://underscores.me/ "So good!") WordPress starter theme, but you could easily reporpose it for pretty much whatever you want.
 
 Some cool stuff about it:
 * For now it requires Sass v3.3.0 Maptastic Maple or newer.
