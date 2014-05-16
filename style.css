@@ -291,8 +291,8 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -311,7 +311,7 @@ p {
 
 b,
 strong {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 dfn,
@@ -323,7 +323,7 @@ i {
 
 blockquote {
   margin: 1em 1.5em;
-  font-size: 1.25em;
+  font-size: 1.5625em;
   font-style: italic;
 }
 
@@ -440,7 +440,7 @@ li > ol {
 }
 
 dt {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 dd {
@@ -456,7 +456,7 @@ table {
 }
 
 th {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
