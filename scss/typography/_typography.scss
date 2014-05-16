@@ -2,15 +2,18 @@
 // Typography
 // ==========================================================================
 
+@import "variables";
+@import "functions";
+
 body,
 button,
 input,
 select,
 textarea {
-	color: $color__primary-text;
-	font-family: sans-serif;
-	font-size: $base__font-size * 1px;
-	line-height: $line-height;
+	color: map-get($root-font, color);
+	font-family: $open-sans;
+	font-size: map-get($root-font, font-size) * 1px;
+	line-height: map-get($root-font, line-height);
 }
 h1,
 h2,
@@ -34,7 +37,9 @@ i {
 	font-style: italic;
 }
 blockquote {
-	margin: 0 1.5em;
+	margin: 1em 1.5em;
+	font-size: em(25);
+	font-style: italic;
 }
 address {
 	margin: 0 0 1.5em;

@@ -2,25 +2,28 @@
 Theme Name: th_s
 Description: Used to style the TinyMCE editor.
 */
-/**
- * Table of Contents:
- *
- * 1.0 - HTML
- * 2.0 - Normalize
- * 3.0 - Typography
- * 4.0 - Elements
- * 5.0 - Links
- * 6.0 - Alignments
- * 7.0 - Media
- * 8.0 - Post Formats
- * 9.0 - RTL
- * ----------------------------------------------------------------------------
- */
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+--------------------------------------------------------------*/
+/*
+1.0 - HTML
+2.0 - Normalize or Reset
+3.0 - Typography
+4.0 - Elements
+    4.1 Links
+    4.2 Horizontal Rules
+    4.3 Lists
+    4.4 Tables
+5.0 - Media
+6.0 - Alignments
+7.0 - Post Formats
+8.0 - RTL
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 - HTML
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-2.0 - Normalize
+2.0 - Normalize or Reset
 --------------------------------------------------------------*/
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
@@ -31,6 +34,17 @@ html {
 
 body {
   margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  -webkit-box-sizing: border-box;
+  /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+  -moz-box-sizing: border-box;
+  /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+  box-sizing: border-box;
 }
 
 article,
@@ -248,9 +262,9 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 h1,
@@ -268,7 +282,7 @@ p {
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 dfn,
@@ -279,7 +293,9 @@ i {
 }
 
 blockquote {
-  margin: 0 1.5em;
+  margin: 1em 1.5em;
+  font-size: 1.25em;
+  font-style: italic;
 }
 
 address {
@@ -345,6 +361,26 @@ big {
 /*--------------------------------------------------------------
 4.0 - Elements
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.1 - Links
+--------------------------------------------------------------*/
+a {
+  color: royalblue;
+}
+
+a:visited {
+  color: midnightblue;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: purple;
+}
+
+/*--------------------------------------------------------------
+3.2 - Horizontal Rules
+--------------------------------------------------------------*/
 hr {
   background-color: #cccccc;
   border: 0;
@@ -352,6 +388,9 @@ hr {
   margin-bottom: 1.5em;
 }
 
+/*--------------------------------------------------------------
+3.3 - Lists
+--------------------------------------------------------------*/
 ul,
 ol {
   margin: 0 0 1.5em 3em;
@@ -372,46 +411,72 @@ li > ol {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-figure {
-  margin: 0;
-}
-
+/*--------------------------------------------------------------
+3.4 - Tables
+--------------------------------------------------------------*/
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
 
 th {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /*--------------------------------------------------------------
-5.0 - Links
+5.0 - Media
 --------------------------------------------------------------*/
-a {
-  color: royalblue;
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
 }
 
-a:visited {
-  color: purple;
+.wp-caption {
+  border: 1px solid #ccc;
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 1.2% auto 0;
+  max-width: 98%;
+}
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
 }
 
-a:hover,
-a:focus,
-a:active {
-  color: midnightblue;
+.wp-caption-text {
+  text-align: center;
+}
+
+.site-main .gallery {
+  margin-bottom: 1.5em;
+}
+.site-main .gallery a img {
+  border: none;
+  height: auto;
+  max-width: 90%;
+}
+.site-main .gallery dd,
+.site-main .gallery figcaption {
+  margin: 0;
+}
+
+embed,
+iframe,
+object {
+  max-width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -436,13 +501,10 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-7.0 - Media
+7.0 - Post formats
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-8.0 - Post formats
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-9.0 - RTL
+8.0 - RTL
 --------------------------------------------------------------*/
 html .mceContentBody.rtl {
   direction: rtl;

@@ -9,14 +9,15 @@ http://codex.wordpress.org/Right_to_Left_Language_Support
 
 */
 
-// Variables
-@import "variables/variables"; // Other variables
-
-// Functions
-@import "functions/functions";
-
-// Mixins
+// -------------------------------------------------------------
+// B - Mixins
+// -------------------------------------------------------------
 @import "mixins/mixins";
+
+// -------------------------------------------------------------
+// B - Colors
+// -------------------------------------------------------------
+@import "colors/colors";
 
 /*
 body {

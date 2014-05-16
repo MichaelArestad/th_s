@@ -2,11 +2,8 @@
 // Clearings
 // ==========================================================================
 
-.clear,
-.entry-content,
-.comment-content,
-.site-header,
-.site-content,
-.site-footer {
+@import "mixins";
+
+.clear {
 	@include clearfix;
 }

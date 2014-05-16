@@ -1,5 +1,13 @@
 // ==========================================================================
-// Structure Variables
+// Clearings Mixins
 // ==========================================================================
 
-// $site-width: 960px;
+@mixin clearfix() {
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}

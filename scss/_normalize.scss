@@ -17,6 +17,13 @@ html {
 body {
 	margin: 0;
 }
+*,
+*:before,
+*:after { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+	-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+	box-sizing:         border-box;
+}
 
 // ==========================================================================
 // HTML5 display definitions
@@ -89,7 +96,7 @@ abbr[title] {
 // Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
 b,
 strong {
-	font-weight: $bold;
+	font-weight: bold;
 }
 
 // Address styling not present in Safari 5 and Chrome.
@@ -263,7 +270,7 @@ input[type="number"]::-webkit-outer-spin-button {
 // 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
 //    (include `-moz` to future-proof).
 input[type="search"] {
-  -webkit-appearance: textfield; // 1 
+  -webkit-appearance: textfield; // 1
   box-sizing: content-box;
 }
 
@@ -297,7 +304,7 @@ textarea {
 // Don't inherit the `font-weight` (applied by a rule above).
 // NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
 optgroup {
-	font-weight: $bold;
+	font-weight: bold;
 }
 
 // ==========================================================================
