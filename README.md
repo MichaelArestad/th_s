@@ -13,10 +13,10 @@ Some cool stuff about it:
 Getting Started
 ---------------
 
-The simplest way to get going is to download `th_s` from Github. Then head over to http://underscores.me to generate your _s based theme from there. Then follow these steps:
+The simplest way to get going is to download `th_s` from Github. Then head over to http://underscores.me to generate your `_s`-based theme. Follow these steps to combine them:
 
 1. Move the contents of `th_s` into yout newly generated theme directory.
-2. Then, update the stylesheet header in style.scss
+2. Then, update the stylesheet header in `style.scss`.
 3. You can process the files using your favorite compiler. CodeKit and Grunt are my personal favorites.
 4. Update or delete this readme.
 
@@ -28,7 +28,7 @@ Once that has installed, you'll need to install the node dependencies. Run this 
 
 `npm install`
 
-Then simply run `grunt` to start watching and compiling your CSS files.
+Then run `grunt` to start watching and compiling your CSS files.
 
 You may also have to install Sass. It's as easy as running `gem install sass`.
 
