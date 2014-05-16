@@ -1,33 +1,9 @@
 module.exports = function(grunt) {
 
-    // 1. All configuration goes here 
+    // 1. All configuration goes here
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        // concat: {
-        //     dist: {
-        //         src: [
-        //             'js/main/*.js',
-        //         ],
-        //         dest: 'js/production.js', // needs a better name, doncha think?
-        //     }
-        // },
-        // uglify: {
-        //     build: {
-        //         src: 'js/production.js',
-        //         dest: 'js/production.min.js'
-        //     }
-        // },
-        // imagemin: {
-        //     dynamic: {
-        //         files: [{
-        //             expand: true,
-        //             cwd: 'images/',
-        //             src: ['**/*.{png,jpg,gif}'],
-        //             dest: 'images/'
-        //         }]
-        //     }
-        // },
         sass: {
             dist: {
                 options: {
@@ -39,7 +15,7 @@ module.exports = function(grunt) {
                     'rtl.css': 'scss/rtl.scss',
                     'css/editor-style.css': 'scss/editor-style.scss',
                 }
-            } 
+            }
         },
         autoprefixer: {
             options: {
@@ -56,26 +32,16 @@ module.exports = function(grunt) {
             },
         },
         watch: {
-            // options: {
-            //     livereload: true,
-            // },
-            // scripts: {
-            //     files: ['js/main.js'],
-            //     tasks: ['concat', 'uglify'],
-            //     options: {
-            //         spawn: false,
-            //     },
-            // },
             scss: {
                 files: ['scss/*.scss', 'scss/**/*.scss', 'scss/**/**/*.scss'],
-                tasks: ['sass', 'autoprefixer'],
+                tasks: ['sass'],
                 options: {
-                    livereload: true,
                     spawn: false,
                 }
             },
-            html: {
-                files: ['*.php', '**/*.php'],
+            autoprefixer: {
+                files: ['*.css', '**/*.css',],
+                tasks: ['autoprefixer'],
                 options: {
                     livereload: true,
                     spawn: false,
@@ -85,9 +51,6 @@ module.exports = function(grunt) {
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
-    grunt.loadNpmTasks('grunt-contrib-concat');     // concatenate
-    grunt.loadNpmTasks('grunt-contrib-uglify');     // minify
-    grunt.loadNpmTasks('grunt-contrib-imagemin');   // optimize images
     grunt.loadNpmTasks('grunt-contrib-watch');      // watch files for changes
     grunt.loadNpmTasks('grunt-contrib-sass');       // Gettin Sassy!
     grunt.loadNpmTasks('grunt-autoprefixer');       // Auto-freaking-prefixer!!!
