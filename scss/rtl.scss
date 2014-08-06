@@ -12,12 +12,12 @@ http://codex.wordpress.org/Right_to_Left_Language_Support
 // -------------------------------------------------------------
 // B - Mixins
 // -------------------------------------------------------------
-@import "mixins/mixins";
+@import "_mixins/mixins";
 
 // -------------------------------------------------------------
 // B - Colors
 // -------------------------------------------------------------
-@import "colors/colors";
+@import "atoms/colors/colors";
 
 /*
 body {

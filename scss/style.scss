@@ -45,100 +45,73 @@ and Blueprint http://www.blueprintcss.org/
 8.0 - Accessibility
 9.0 - Alignments
 10.0 - Clearings
-11.0 - UI Patterns
+11.0 - Organisms
 	11.1 - Widgets
 	11.2 - Posts and pages
 	11.3 - Asides
 	11.4 - Comments
 12.0 - Main
 13.0 - Infinite scroll
-14.0 - IE
-15.0 - Print styles
+14.0 - Print styles
 
 --------------------------------------------------------------*/
 
 // -------------------------------------------------------------
 // A - Mixins
 // -------------------------------------------------------------
-@import "mixins/mixins";
+@import "_mixins/mixins";
 
 // -------------------------------------------------------------
 // B - Colors
 // -------------------------------------------------------------
-@import "colors/colors";
+@import "atoms/colors/colors";
 
-/*--------------------------------------------------------------
-1.0 - Normalize or Reset
---------------------------------------------------------------*/
-@import "normalize";
-// @import "reset";
+@include section("Normalize or Reset");
+@import "_utilities/normalize";
+// @import "modules/reset";
 
-/*--------------------------------------------------------------
-2.0 - Typography
---------------------------------------------------------------*/
-@import "typography/typography";
+@include section("Typography");
+@import "atoms/typography/typography";
 
-/*--------------------------------------------------------------
-3.0 - Elements
---------------------------------------------------------------*/
-@import "modules/elements/elements";
+@include section("Elements");
+@import "atoms/links",
+	"atoms/horizontal-rules",
+	"atoms/lists",
+	"atoms/tables";
 
-/*--------------------------------------------------------------
-4.0 - Forms
---------------------------------------------------------------*/
-@import "forms/forms";
+@include section("Forms");
+@import "atoms/form-fields/form-fields";
 
-/*--------------------------------------------------------------
-5.0 - Buttons
---------------------------------------------------------------*/
-@import "buttons/buttons";
+@include section("Buttons");
+@import "atoms/buttons/buttons";
 
-/*--------------------------------------------------------------
-6.0 - Media
---------------------------------------------------------------*/
-@import "modules/media";
+@include section("Media");
+@import "atoms/media";
 
-/*--------------------------------------------------------------
-7.0 - Navigation
---------------------------------------------------------------*/
-@import "modules/navigation/navigation";
+@include section("Navigation");
+@import "molecules/navigation/navigation";
 
-/*--------------------------------------------------------------
-8.0 - Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
+@include section("Accessibility");
+@import "_utilities/accessibility";
 
-/*--------------------------------------------------------------
-9.0 - Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
+@include section("Alignments");
+@import "atoms/alignments";
 
-/*--------------------------------------------------------------
-10.0 - Clearings
---------------------------------------------------------------*/
-@import "modules/clearings/clearings";
+@include section("Clearings");
+@import "_utilities/clearings";
 
-/*--------------------------------------------------------------
-11.0 - UI Patterns
---------------------------------------------------------------*/
-@import "ui-patterns/ui-patterns";
+@include section("Organisms");
+@import
+	"organisms/widgets",
+	"organisms/posts-and-pages",
+	"organisms/asides",
+	"organisms/comments";
 
-/*--------------------------------------------------------------
-12.0 - Main
---------------------------------------------------------------*/
-@import "main";
+@include section("Main");
+@import "templates/main";
 
-/*--------------------------------------------------------------
-13.0 - Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
+@include section("Infinite scroll");
+@import "_utilities/infinite-scroll";
 
-/*--------------------------------------------------------------
-14.0 - IE
---------------------------------------------------------------*/
-@import "vendor/ie";
-
-/*--------------------------------------------------------------
-15.0 - Print Styles
---------------------------------------------------------------*/
-@import "modules/print";
+@include section("Print styles");
+@import "_utilities/print";
