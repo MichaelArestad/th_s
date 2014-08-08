@@ -11,6 +11,6 @@
 	}
 	::-webkit-scrollbar-thumb {
 		background: $thumb;
-		@include box-shadow(inset .05em .05em 0 rgba(0, 0, 0, .1), inset 0 -.05em 0 rgba(0, 0, 0, .07));
+		box-shadow: inset .05em .05em 0 rgba(0, 0, 0, .1), inset 0 -.05em 0 rgba(0, 0, 0, .07);
 	}
 }
