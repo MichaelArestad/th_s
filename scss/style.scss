@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me & Michael Arestad
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.0
+Version: 1.1
 License: GNU General Public License
 License URI: license.txt
 Text Domain: th_s
@@ -22,96 +22,30 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
---------------------------------------------------------------*/
-
-// A - Mixins
-// B - Colors
-
-/*
-1.0 - Normalize or Reset
-2.0 - Typography
-3.0 - Elements
-	3.1 Links
-	3.2 Horizontal Rules
-	3.3 Lists
-	3.4 Tables
-4.0 - Forms
-5.0 - Buttons
-6.0 - Media
-7.0 - Navigation
-	7.1 - Menus
-8.0 - Accessibility
-9.0 - Alignments
-10.0 - Clearings
-11.0 - Organisms
-	11.1 - Widgets
-	11.2 - Posts and pages
-	11.3 - Asides
-	11.4 - Comments
-12.0 - Main
-13.0 - Infinite scroll
-14.0 - Print styles
-
---------------------------------------------------------------*/
-
-// -------------------------------------------------------------
-// A - Mixins
-// -------------------------------------------------------------
 @import "_utilities/mixins/mixins";
-
-// -------------------------------------------------------------
-// B - Colors
-// -------------------------------------------------------------
-@import "atoms/colors/colors";
-
-@include section("Normalize or Reset");
+@import "_utilities/colors";
 @import "_utilities/normalize";
-// @import "modules/reset";
+// @import "_utilities/reset";
 
-@include section("Typography");
-@import "atoms/typography/typography";
-
-@include section("Elements");
-@import "atoms/links",
-	"atoms/horizontal-rules",
-	"atoms/lists",
-	"atoms/tables";
-
-@include section("Forms");
-@import "atoms/form-fields/form-fields";
-
-@include section("Buttons");
-@import "atoms/buttons/buttons";
-
-@include section("Media");
-@import "atoms/media";
-
-@include section("Navigation");
-@import "molecules/navigation/navigation";
-
-@include section("Accessibility");
 @import "_utilities/accessibility";
-
-@include section("Alignments");
-@import "atoms/alignments";
-
-@include section("Clearings");
 @import "_utilities/clearings";
-
-@include section("Organisms");
-@import
-	"organisms/widgets",
-	"organisms/posts-and-pages",
-	"organisms/asides",
-	"organisms/comments";
-
-@include section("Main");
-@import "templates/main";
-
-@include section("Infinite scroll");
 @import "_utilities/infinite-scroll";
 
-@include section("Print styles");
+@import "components/typography";
+@import "components/links";
+@import "components/horizontal-rules";
+@import "components/lists";
+@import "components/tables";
+@import "components/form-fields";
+@import "components/buttons";
+@import "components/media";
+@import "components/navigation";
+@import "components/alignments";
+@import "components/widgets";
+@import "components/posts-and-pages";
+@import "components/asides";
+@import "components/comments";
+
+@import "templates/main";
+
 @import "_utilities/print";

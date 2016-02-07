@@ -2,9 +2,44 @@
 // Form Fields
 // ==========================================================================
 
-@import
-	"variables",
-	 "extends";
+
+// ==========================================================================
+// Form-field variables
+// ==========================================================================
+
+$form-field:(
+	color: #333,
+	border-color: #ccc,
+	color--hover: #222,
+);
+
+
+// ==========================================================================
+// Form fields extends
+// ==========================================================================
+
+%form-field {
+	padding: 3px;
+	color: map-get($form-field, color);
+	border: 1px solid map-get($form-field, border-color);
+	border-radius: 3px;
+
+	&:focus {
+		color: map-get($form-field, color);
+	}
+}
+
+%textarea {
+	overflow: auto; // Removes default vertical scrollbar in IE6/7/8/9
+	padding-left: 3px;
+	vertical-align: top; // Improves readability and alignment in all browsers
+	width: 98%;
+}
+
+
+// ==========================================================================
+// Form Fields styles
+// ==========================================================================
 
 button,
 input,

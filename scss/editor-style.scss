@@ -4,66 +4,29 @@ Description: Used to style the TinyMCE editor.
 */
 
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
---------------------------------------------------------------*/
-
-// A - Mixins
-// B - Colors
-
-/*
-1.0 - HTML
-2.0 - Normalize or Reset
-3.0 - Typography
-4.0 - Elements
-    4.1 Links
-    4.2 Horizontal Rules
-    4.3 Lists
-    4.4 Tables
-5.0 - Media
-6.0 - Alignments
-7.0 - Post Formats
-8.0 - RTL
---------------------------------------------------------------*/
-
-// -------------------------------------------------------------
-// A - Mixins
-// -------------------------------------------------------------
 @import "_utilities/mixins/mixins";
+@import "_utilities/colors";
 
-// -------------------------------------------------------------
-// B - Colors
-// -------------------------------------------------------------
-@import "atoms/colors/colors";
-
-
-@include section("HTML");
 html .mceContentBody {
 	// Set the font-size and max-width
 }
 
-@include section("Normalize or Reset");
 @import "_utilities/normalize";
-// @import "modules/reset";
+// @import "_utilities/reset";
 
-@include section("Typography");
-@import "atoms/typography/typography";
+@import "components/typography";
+@import "components/links";
+@import "components/horizontal-rules";
+@import "components/lists";
+@import "components/tables";
+@import "components/media";
+@import "components/alignments";
 
-@include section("Elements");
-@import "atoms/links",
-	"atoms/horizontal-rules",
-	"atoms/lists",
-	"atoms/tables";
 
-@include section("Media");
-@import "atoms/media";
+// ==========================================================================
+// RTL
+// ==========================================================================
 
-@include section("Alignments");
-@import "atoms/alignments";
-
-@include section("Post formats");
-
-@include section("RTL");
 html .mceContentBody.rtl {
 	direction: rtl;
 	unicode-bidi: embed;

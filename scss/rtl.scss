@@ -9,15 +9,8 @@ http://codex.wordpress.org/Right_to_Left_Language_Support
 
 */
 
-// -------------------------------------------------------------
-// B - Mixins
-// -------------------------------------------------------------
 @import "_utilities/mixins/mixins";
-
-// -------------------------------------------------------------
-// B - Colors
-// -------------------------------------------------------------
-@import "atoms/colors/colors";
+@import "_utilities/colors";
 
 /*
 body {
