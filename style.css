@@ -51,8 +51,8 @@ and Blueprint http://www.blueprintcss.org/
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-1     Normalize or Reset
---------------------------------------------------------------*/
+	1     Normalize or Reset
+	--------------------------------------------------------------*/
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -282,8 +282,8 @@ th {
 }
 
 /*--------------------------------------------------------------
-2     Typography
---------------------------------------------------------------*/
+	2     Typography
+	--------------------------------------------------------------*/
 body,
 button,
 input,
@@ -331,7 +331,7 @@ address {
 }
 
 pre {
-  background: #eeeeee;
+  background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 1.5rem;
@@ -387,24 +387,26 @@ big {
 }
 
 /*--------------------------------------------------------------
-3     Elements
---------------------------------------------------------------*/
+	3     Elements
+	--------------------------------------------------------------*/
 /*--------------------------------------------------------------
-3.1   Links
---------------------------------------------------------------*/
+	3.1   Links
+	--------------------------------------------------------------*/
 a {
   color: royalblue;
 }
+
 a:visited {
   color: purple;
 }
+
 a:hover, a:focus, a:active {
   color: midnightblue;
 }
 
 /*--------------------------------------------------------------
-3.2   Horizontal rules
---------------------------------------------------------------*/
+	3.2   Horizontal rules
+	--------------------------------------------------------------*/
 hr {
   background-color: #ccc;
   border: 0;
@@ -413,8 +415,8 @@ hr {
 }
 
 /*--------------------------------------------------------------
-3.3   Lists
---------------------------------------------------------------*/
+	3.3   Lists
+	--------------------------------------------------------------*/
 ul,
 ol {
   margin: 0 0 1.5em 3em;
@@ -443,8 +445,8 @@ dd {
 }
 
 /*--------------------------------------------------------------
-3.4   Tables
---------------------------------------------------------------*/
+	3.4   Tables
+	--------------------------------------------------------------*/
 table {
   margin: 0 0 1.5em;
   width: 100%;
@@ -455,8 +457,8 @@ th {
 }
 
 /*--------------------------------------------------------------
-4     Forms
---------------------------------------------------------------*/
+	4     Forms
+	--------------------------------------------------------------*/
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -464,17 +466,18 @@ input[type="password"],
 input[type="search"],
 textarea {
   padding: 3px;
-  color: #333333;
-  border: 1px solid #cccccc;
+  color: #333;
+  border: 1px solid #ccc;
   border-radius: 3px;
 }
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  color: #333333;
+  color: #333;
 }
 
 textarea {
@@ -515,8 +518,8 @@ input::-moz-focus-inner {
 }
 
 /*--------------------------------------------------------------
-5     Buttons
---------------------------------------------------------------*/
+	5     Buttons
+	--------------------------------------------------------------*/
 button,
 input[type="button"],
 input[type="reset"],
@@ -541,6 +544,7 @@ input[type="submit"] {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
 }
+
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -548,6 +552,7 @@ input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa #bbb;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
+
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -560,8 +565,8 @@ input[type="submit"]:active {
 }
 
 /*--------------------------------------------------------------
-6     Media
---------------------------------------------------------------*/
+	6     Media
+	--------------------------------------------------------------*/
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -576,11 +581,13 @@ input[type="submit"]:active {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
+
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin: 1.2% auto 0;
   max-width: 98%;
 }
+
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
@@ -592,11 +599,13 @@ input[type="submit"]:active {
 .site-main .gallery {
   margin-bottom: 1.5em;
 }
+
 .site-main .gallery a img {
   border: none;
   height: auto;
   max-width: 90%;
 }
+
 .site-main .gallery dd,
 .site-main .gallery figcaption {
   margin: 0;
@@ -609,18 +618,19 @@ object {
 }
 
 /*--------------------------------------------------------------
-7     Navigation
---------------------------------------------------------------*/
+	7     Navigation
+	--------------------------------------------------------------*/
 /*--------------------------------------------------------------
-7.1   Menus
---------------------------------------------------------------*/
+	7.1   Menus
+	--------------------------------------------------------------*/
 /*--------------------------------------------------------------
-8     Accessibility
---------------------------------------------------------------*/
+	8     Accessibility
+	--------------------------------------------------------------*/
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
 }
+
 .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
@@ -641,8 +651,8 @@ object {
 }
 
 /*--------------------------------------------------------------
-9     Alignments
---------------------------------------------------------------*/
+	9     Alignments
+	--------------------------------------------------------------*/
 .alignleft {
   display: inline;
   float: left;
@@ -662,25 +672,27 @@ object {
 }
 
 /*--------------------------------------------------------------
-10    Clearings
---------------------------------------------------------------*/
+	10    Clearings
+	--------------------------------------------------------------*/
 .clear:before, .clear:after {
   content: "";
   display: table;
 }
+
 .clear:after {
   clear: both;
 }
 
 /*--------------------------------------------------------------
-11    Organisms
---------------------------------------------------------------*/
+	11    Organisms
+	--------------------------------------------------------------*/
 /*--------------------------------------------------------------
-11.1  Widgets
---------------------------------------------------------------*/
+	11.1  Widgets
+	--------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.5em;
 }
+
 .widget select {
   max-width: 100%;
 }
@@ -690,8 +702,8 @@ object {
 }
 
 /*--------------------------------------------------------------
-11.2  Posts and pages
---------------------------------------------------------------*/
+	11.2  Posts and pages
+	--------------------------------------------------------------*/
 .hentry {
   margin: 0 0 1.5em;
 }
@@ -718,27 +730,28 @@ object {
 }
 
 /*--------------------------------------------------------------
-11.3  Asides
---------------------------------------------------------------*/
+	11.3  Asides
+	--------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
 }
 
 /*--------------------------------------------------------------
-11.4  Comments
---------------------------------------------------------------*/
+	11.4  Comments
+	--------------------------------------------------------------*/
 .comment-content a {
   word-wrap: break-word;
 }
 
 /*--------------------------------------------------------------
-12    Main
---------------------------------------------------------------*/
+	12    Main
+	--------------------------------------------------------------*/
 /*--------------------------------------------------------------
-13    Infinite scroll
---------------------------------------------------------------*/
-.infinite-scroll .paging-navigation, .infinite-scroll.neverending .site-footer {
+	13    Infinite scroll
+	--------------------------------------------------------------*/
+.infinite-scroll .paging-navigation,
+.infinite-scroll.neverending .site-footer {
   display: none;
 }
 
@@ -747,8 +760,8 @@ object {
 }
 
 /*--------------------------------------------------------------
-14    Print styles
---------------------------------------------------------------*/
+	14    Print styles
+	--------------------------------------------------------------*/
 @media print {
   * {
     background: transparent !important;
@@ -756,45 +769,36 @@ object {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
   a:visited {
     text-decoration: underline;
   }
-
   a[href]:after {
     content: " (" attr(href) ")";
   }
-
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
-
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   thead {
     display: table-header-group;
   }
-
   tr,
   img {
     page-break-inside: avoid;
   }
-
   img {
     max-width: 100% !important;
   }
-
   @page {
     margin: 0.5cm;
   }
@@ -804,9 +808,10 @@ object {
     orphans: 3;
     widows: 3;
   }
-
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
